@@ -1,7 +1,7 @@
 # My Technical Writing Portfolio
 ***
 
-This is my technical writing portfolio developed during the [WriteTech](https://writetechhub.org/) 3-month bootcamp
+This is my technical writing portfolio developed during the [WriteTech](https://writetechhub.org/) 3-month bootcamp.
 
 This portfolio is currently **under development** and will be updated as the learning continues. Stay tuned.
 
@@ -9,7 +9,7 @@ This portfolio is currently **under development** and will be updated as the lea
 ***
 I am a Cloud/DevOps engineer who is passionate about simplifying cloud concepts while maintining quality,  integrity, and user-centricness of the tool/concept at hand. I, therefore, double up as a Technical writer and educator in training. 
 
-# Project modules 
+## Project modules 
 ***
 | Module | Folder | Final Deliverables | Live Link |
 |:--------|:--------|:---------------------|:-----------|
@@ -22,7 +22,7 @@ I am a Cloud/DevOps engineer who is passionate about simplifying cloud concepts 
 
 See you on the learning side of life ✍🏽
 
-# View related work
+## View related work
 ***
 - [LinkedIn Profile](https://www.linkedin.com/in/jully-achenchi)
 - [Medium Blog](https://medium.com/@jullyachenchi8)
