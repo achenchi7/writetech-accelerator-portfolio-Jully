@@ -3,7 +3,7 @@
 
 This is my technical writing portfolio developed during the [WriteTech](https://writetechhub.org/) 3-month bootcamp.
 
-This portfolio is currently **under development** and will be updated as the learning continues. Stay tuned.
+Over the course of the bootcamp, I completed technical writing projects across various domains — including API documentation, AI, DevOps, automation, and Web3 — using modern documentation workflows and tools.
 
 ## About Me
 ***
