@@ -27,21 +27,38 @@ const sidebars = {
       id: 'intro',
     },
   ],
-  toolingSidebar: [
-    'documentation-tooling/intro',
+  toolingSidebar: [ 
+    {
+      type: 'doc',
+      label: 'Introduction',
+      id: 'documentation-tooling/intro',
+    },
     {
       type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
+      label: 'Mautic',
+      link: {
+        type: 'doc',
+        id: 'documentation-tooling/mautic-overview'
+      },
+      items: [
+        'documentation-tooling/getting-started',
+        {
+          type: 'category',
+          label: 'API Reference',
+          items: [
+            'documentation-tooling/api-reference/get-user'
+          ],
+        }
+      ],
     },
   ],
 
   apiSidebar: [
     'intro',
     {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
+      type: 'doc',
+      label: 'Introduction',
+      id: 'api-documentation/intro',
     },
   ],
    
