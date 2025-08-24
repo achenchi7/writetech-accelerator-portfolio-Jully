@@ -84,7 +84,7 @@ const config = {
         title: 'Syntax & Story',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/android-chrome-192x192.png',
         },
         items: [
           {
@@ -129,17 +129,14 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Medium',
+                href: 'https://medium.com/@jullyachenchi8',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/jully-achenchi/',
               },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
+              
             ],
           },
           {
@@ -163,6 +160,7 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+
 };
 
 export default config;
