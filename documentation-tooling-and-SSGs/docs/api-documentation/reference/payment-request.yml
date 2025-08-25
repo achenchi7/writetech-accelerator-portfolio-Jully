@@ -1,0 +1,95 @@
+openapi: 3.0.3
+info:
+  title: Payment Request API
+  description: >
+    Partial OpenAPI 3.0 spec describing the Payment Request API.  
+    The Payment Request API provides a way for web applications to 
+    make secure payments via the browser.  
+  version: 1.0.0
+servers:
+  - url: https://example.com/api   # Replace with your actual backend if applicable
+
+paths:
+  /payment-request:
+    post:
+      summary: Initiates a payment request
+      description: >
+        Creates a new payment request session.  
+        The browser will display a payment sheet to the user and return the result.  
+      operationId: createPaymentRequest
+      requestBody:
+        description: Payment details for the transaction
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - total
+                - displayItems
+                - supportedMethods
+              properties:
+                total:
+                  type: object
+                  description: Total amount of the payment
+                  properties:
+                    label:
+                      type: string
+                      example: "Total due"
+                    amount:
+                      type: object
+                      properties:
+                        currency:
+                          type: string
+                          example: "USD"
+                        value:
+                          type: string
+                          example: "49.99"
+                displayItems:
+                  type: array
+                  description: Itemized breakdown of the payment
+                  items:
+                    type: object
+                    properties:
+                      label:
+                        type: string
+                        example: "Subtotal"
+                      amount:
+                        type: object
+                        properties:
+                          currency:
+                            type: string
+                            example: "USD"
+                          value:
+                            type: string
+                            example: "45.00"
+                supportedMethods:
+                  type: array
+                  description: List of supported payment methods
+                  items:
+                    type: string
+                  example: ["basic-card", "https://apple.com/apple-pay"]
+
+      responses:
+        "200":
+          description: Payment successfully processed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "success"
+                  transactionId:
+                    type: string
+                    example: "txn_123456"
+                  payerEmail:
+                    type: string
+                    example: "jane.doe@example.com"
+        "400":
+          description: Invalid request
+        "402":
+          description: Payment required or declined
+        "500":
+          description: Server error
