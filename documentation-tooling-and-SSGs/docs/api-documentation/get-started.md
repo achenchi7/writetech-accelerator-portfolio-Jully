@@ -1,4 +1,8 @@
-# Introduction to the Chimoney API
+---
+sidebar_position: 1
+title: Introduction to the Chimoney API
+---
+
 
 API - Application Programming Interface
 

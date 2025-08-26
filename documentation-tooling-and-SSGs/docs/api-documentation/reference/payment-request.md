@@ -1,11 +1,9 @@
-
-## 📌 `reference/payment-request.md`
-
-```markdown
-# Payments request API
-
-Initiates a payment request which is sent to the payer's email address specified.
 ---
+title: Payments request API
+---
+
+This API initiates a payment request which is sent to the payer's email address specified.
+
 
 ## Endpoint
 This is a **POST request**. POST is used to send data to a server.

@@ -1,8 +1,10 @@
-# List of all supported airtime Countries.
+---
+title: API to list supported Airtime countries
+---
+
 
 Retrieves a list of countries supported for airtime transactions.
 
----
 
 ### Endpoint
 This is a **GET request**, which means you’re asking the API to *fetch* information for you.  
