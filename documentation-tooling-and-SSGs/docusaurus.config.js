@@ -105,7 +105,7 @@ const config = {
             position: 'left',
             label: 'API Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/docs/api-documentation', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/achenchi7',
             label: 'GitHub',
