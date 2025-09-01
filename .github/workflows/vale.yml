@@ -1,0 +1,35 @@
+name: Vale review
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.md'
+
+jobs:
+  lint: 
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Run vale check
+      - name: Run Vale check
+        uses: errata-ai/vale-action@v2.1.1
+        with:
+          fail_on_error: false
+          reporter: 'github-pr-review'
+  
+  markdown-link-check:
+    name: Check Markdown Links
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: tcort/github-action-markdown-link-check@v1
+    - name: display errors
+      run: |
+          echo "${{ steps.markdown-link-check.outputs.MLC_OUTPUT }}"
+      
