@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Sample API
+  version: 1.0.0
+  description: A sample API to test Spectral + Redocly workflow
+servers:
+  - url: https://api.example.com/v1
+paths:
+  /hello:
+    get:
+      summary: Say hello
+      operationId: sayHello
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Hello, world!"
