@@ -34,27 +34,31 @@ resource "local_file" "foo" {
 ## Step 4: Initialize terraform
 Open the terminal in VS code and run terraform init command. This will initialize terraform and download any necessary pluggins.
 
-```
+```bash
 terraform init
 ```
+![tf-init](devops-cloud-docs\media\tf-init.png)
 
 You’ll notice that 2 more files have automatically been created. The `terraform.tfstate` file and the `terraform.lock.hcl`. The `terraform.tfstate` file keeps a record of all the changes that will be applied to your infrastructure.
 
 ## Step 5: Preview the changes
 Run the terraform plan command to preview the resource(s) that Terraform will make to your infra. The `terraform plan` command shows you resources that will be created, modified, or destroyed.
 
-```
+```bash
 terraform plan
 ```
+![tf-plan](devops-cloud-docs\media\tf-plan.png)
 
 ## Step 6: Apply the changes
 Run `terraform apply` to create the resources that you had a peek into. You will be prompted to confirm the changes before they are applied. Alternatively, you can run `terraform apply -auto-approve` to create the resources without getting the confirmation prompt.
 
-```
+```bash
 terraform apply
   or
 terraform apply -auto-approve
 ```
+![tf-apply](devops-cloud-docs\media\tf-apply.png)
 
 ## Step 7: Verify the changes
 To verify the changes, open your sidebar to view the new `file.txt` file and its content.
+![tf-verification](devops-cloud-docs\media\tf-verification.png)
