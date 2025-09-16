@@ -29,6 +29,7 @@ Create a folder on the C drive as C:/terraform. Download the zip file in this fo
 ![open-env](https://github.com/achenchi7/writetech-accelerator-portfolio-Jully/blob/main/devops-cloud-docs/media/open-env.png)
 
 - On the Path pop-up that opens, click New and add the Terraform download folder. This is the folder where the zip file was downloaded and unzipped (C:/terraform).
+
 ![pop-up-env](https://github.com/achenchi7/writetech-accelerator-portfolio-Jully/blob/main/devops-cloud-docs/media/pop-up.png)
 
 
