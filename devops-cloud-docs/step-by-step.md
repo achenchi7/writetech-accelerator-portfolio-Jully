@@ -10,11 +10,11 @@ In this tutorial, you'll use Terraform to create a local file with content.
 
 ## Step 1: Create a folder
 
-In your preferred file location on your PC, create a folder that . You can call it `terraform-projects`.
+In your preferred file location on your PC, create a folder You can call it `terraform-projects`.
 
-Open the folder in VS code.
+Open the folder in VS Code.
 
-## Step 2: Create a file with .tf extension
+## Step 2: Create a file with `.tf` extension
 Create a file within the folder and name it `main.tf`. This file will contain the Terraform code that specifies what resources you want to create and how they should be configured.
 
 ## Step 3: Populate the file
@@ -37,7 +37,7 @@ Open the terminal in VS code and run terraform init command. This will initializ
 ```bash
 terraform init
 ```
-![tf-init](devops-cloud-docs\media\tf-init.png)
+![tf-init](https://github.com/achenchi7/writetech-accelerator-portfolio-Jully/blob/main/devops-cloud-docs/media/tf-init.png)
 
 You’ll notice that 2 more files have automatically been created. The `terraform.tfstate` file and the `terraform.lock.hcl`. The `terraform.tfstate` file keeps a record of all the changes that will be applied to your infrastructure.
 
@@ -47,7 +47,7 @@ Run the terraform plan command to preview the resource(s) that Terraform will ma
 ```bash
 terraform plan
 ```
-![tf-plan](devops-cloud-docs\media\tf-plan.png)
+![tf-plan](https://github.com/achenchi7/writetech-accelerator-portfolio-Jully/blob/main/devops-cloud-docs/media/tf-plan.png)
 
 ## Step 6: Apply the changes
 Run `terraform apply` to create the resources that you had a peek into. You will be prompted to confirm the changes before they are applied. Alternatively, you can run `terraform apply -auto-approve` to create the resources without getting the confirmation prompt.
@@ -57,8 +57,8 @@ terraform apply
   or
 terraform apply -auto-approve
 ```
-![tf-apply](devops-cloud-docs\media\tf-apply.png)
+![tf-apply](https://github.com/achenchi7/writetech-accelerator-portfolio-Jully/blob/main/devops-cloud-docs/media/tf-apply.png)
 
 ## Step 7: Verify the changes
 To verify the changes, open your sidebar to view the new `file.txt` file and its content.
-![tf-verification](devops-cloud-docs\media\tf-verification.png)
+![tf-verification](https://github.com/achenchi7/writetech-accelerator-portfolio-Jully/blob/main/devops-cloud-docs/media/tf-verification.png)
